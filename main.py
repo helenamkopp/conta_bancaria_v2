@@ -1,17 +1,23 @@
 class Employee:
 
     def __init__(self, name, cpf, pay):
-        self._name = name
-        self._cpf = cpf
-        self._pay = pay
+        self._name = str(name)
+        self._cpf = str(cpf)
+        self._pay = float(pay)
+
+    def get_bonus(self):
+        return self._pay * 0.10
 
 
 class Manager(Employee):
 
     def __init__(self, name, cpf, pay, password, number_of_managed):
         super().__init__(name, cpf, pay)
-        self._password = password
-        self._number_of_managed = number_of_managed
+        self._password = int(password)
+        self._number_of_managed = int(number_of_managed)
+
+    def get_bonus(self):
+        return self._pay * 0.15
 
     def authenticate(self, password):
         if self._password == password:
