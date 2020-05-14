@@ -10,15 +10,9 @@ if __name__ == '__main__':
     manager2 = Manager("Isabel", "333.333.333-33", "5000.00", "1245", "0")
     print(f"Manager bonus: {manager2.get_bonus()}")
 
-    # client = Client("Maria", "999.999.999-45", "548")
-
-
-
-
     control = Bonus_Control()
     control.register(employee)
     control.register(manager1)
     control.register(manager2)
-    # control.register(client)
 
     print(f"Total: {control.bonus_total}")
