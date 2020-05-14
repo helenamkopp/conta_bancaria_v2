@@ -34,8 +34,19 @@ class Bonus_Control:
         self._bonus_total = bonus_total
 
     def register(self, employee):
-        self._bonus_total += employee.get_bonus()
+        if hasattr(employee, "get_bonus"):
+            self._bonus_total += employee.get_bonus()
+        else:
+            print(f"Instance {self.__class__.__name__} does not implement the get_bonus() method")
 
     @property
     def bonus_total(self):
         return self._bonus_total
+
+
+class Client:
+
+    def __init__(self, name, cpf, password):
+        self._name = name
+        self._cpf = cpf
+        self._password = password
