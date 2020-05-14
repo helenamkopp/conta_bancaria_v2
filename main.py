@@ -17,7 +17,7 @@ class Manager(Employee):
         self._number_of_managed = int(number_of_managed)
 
     def get_bonus(self):
-        return self._pay * 0.15
+        return super().get_bonus() + 1000
 
     def authenticate(self, password):
         if self._password == password:
@@ -26,3 +26,16 @@ class Manager(Employee):
         else:
             print("access denied")
             return False
+
+
+class Bonus_Control:
+
+    def __init__(self, bonus_total=0):
+        self._bonus_total = bonus_total
+
+    def register(self, employee):
+        self._bonus_total += employee.get_bonus()
+
+    @property
+    def bonus_total(self):
+        return self._bonus_total
