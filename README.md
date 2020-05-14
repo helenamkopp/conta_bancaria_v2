@@ -11,6 +11,8 @@
 
 # * class Bonus_Control: método construtor iniciando o bonus_total = 0, nao permitindo que um cliente por exemplo acesse essa classe(como vemos no método def register)
 
+# Arquivo extra.py: mostra que é impossivel aplicar um bonus a um cliente, considerando que ele precisa ter o método get_bonus para funcionar. 
+
 
 #Arquivo test_main.py:
 # realiza alguns testes unitários referentes ao arquivo main.py
