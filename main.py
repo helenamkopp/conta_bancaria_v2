@@ -35,7 +35,7 @@ class Bonus_Control:
 
     def register(self, employee):
         if hasattr(employee, "get_bonus"):
-            self._bonus_total += employee.get_bonus()
+            self._bonus_total += employee.get_bonus
         else:
             print(f"Instance {self.__class__.__name__} does not implement the get_bonus() method")
 
