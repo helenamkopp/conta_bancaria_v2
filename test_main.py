@@ -1,10 +1,18 @@
-from main import Employee, Manager
+from main import Employee, Manager, Bonus_Control
 
-manager = Manager("Helena", "555.457.854-95", "5000.00", "9854", "4")
-print(manager.get_bonus())
-print()
-print()
-employee = Employee("Isabel", "452.753.930-00", "2000.00")
-print(vars(employee))
-print()
-print(vars(manager))
+if __name__ == '__main__':
+    employee = Employee("João", "111.111.111-11", "2000.00")
+    print(f"Employee bonus: {employee.get_bonus()}")
+
+    manager1 = Manager("Helena", "222.222.222-22", "5000.00", "1234", "0")
+    print(f"Manager bonus: {manager1.get_bonus()}")
+
+    manager2 = Manager("Isabel", "333.333.333-33", "5000.00", "1245", "0")
+    print(f"Manager bonus: {manager2.get_bonus()}")
+
+    control = Bonus_Control()
+    control.register(employee)
+    control.register(manager1)
+    control.register(manager2)
+
+    print(f"Total: {control.bonus_total}")
