@@ -1,4 +1,4 @@
-# conta_bancaria_v2
+# conta_bancaria_v2-a
 
  Pequeno projeto Orientado a Objetos construido utilizando o PyCharm com o objetivo de aprendizado de conceitos 
  de herança e polimorfismo. 
