@@ -1,6 +1,6 @@
 # conta_bancaria_v2
 
- Pequeno projeto Orientado a Objetos construido utilizando o PyCharm contendo para construção de aprendizado de conceitos 
+ Pequeno projeto Orientado a Objetos construido utilizando o PyCharm com o objetivo de aprendizado de conceitos 
  de herança e polimorfismo. 
 
 # Arquivo main.py:
