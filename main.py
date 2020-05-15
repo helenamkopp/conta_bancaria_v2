@@ -28,7 +28,7 @@ class Manager(Employee):
             return False
 
 
-class Bonus_Control:
+class BonusControl:
 
     def __init__(self, bonus_total=0):
         self._bonus_total = bonus_total
